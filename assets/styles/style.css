@@ -22,7 +22,7 @@ a {
   align-items: center;
 }
 .banner {
-  height: 200px;
+  height: 150px;
   background: linear-gradient(to right, rgb(34, 50, 67), rgba(34, 50, 67, 0.7)),
     url("../images/tech.jpeg") bottom;
   background-size: cover;
@@ -79,4 +79,12 @@ main {
 }
 .info {
   padding: 25px;
+  color: #223243;
+}
+.info .heading {
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.info section {
+  margin-top: 50px;
 }
