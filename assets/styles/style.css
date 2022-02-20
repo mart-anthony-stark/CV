@@ -7,7 +7,7 @@
 }
 :root {
   --c-pri: #223243;
-  --c-pri: rgb(34, 50, 67);
+  --c-pri-alpha: rgb(34, 50, 67);
 }
 body {
   scroll-behavior: smooth;
@@ -123,7 +123,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
   gap: 15px;
 }
 .technical-skills .skills-cont .card {
@@ -139,12 +138,14 @@ main {
   justify-content: space-between;
 }
 .technical-skills .skills-cont .card .profficiency {
+  border-radius: 5px;
   position: relative;
-  background: rgb(255, 255, 255);
+  background: rgb(141, 141, 141);
   height: 5px;
   width: 100%;
 }
 .technical-skills .skills-cont .card .profficiency .percent {
+  border-radius: 5px;
   position: absolute;
   background: var(--c-pri);
   height: 100%;
