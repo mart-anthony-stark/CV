@@ -38,7 +38,7 @@ main {
 }
 .two-cols {
   display: flex;
-  /* justify-content: space-between; */
+  /* justify-content: center; */
   gap: 50px;
   flex-wrap: wrap;
 }
@@ -107,7 +107,7 @@ main {
   margin-top: 50px;
 }
 .education {
-  max-width: 500px;
+  max-width: 400px;
 }
 .education .year {
   font-weight: 900;
