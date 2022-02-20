@@ -18,6 +18,7 @@
         new Link("https://www.facebook.com/", "martanthony.abanosalazar", "fa-facebook"),
         new Link("https://twitter.com/anthony_stark21", "@anthony_stark21", "fa-twitter"),
     );
+    $career_objective = "Enthusiastic and hard working web developer with two years of experience seeking a position with tech companies where I can offer my expertise in JavaScript to clients and customers.";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,7 +56,7 @@
 
             <section class="objective">
                 <h2 class="heading">Career Objective</h2>
-                <p>"Enthusiastic and hard working web developer with two years of experience seeking a position with tech companies where I can offer my expertise in JavaScript to clients and customers."</p>
+                <p><?php echo $career_objective ?></p>
             </section>
 
             <section class="education">
