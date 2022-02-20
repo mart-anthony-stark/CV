@@ -59,15 +59,26 @@ main {
   background-size: cover;
   border: 1px solid white;
 }
+.sidebar .info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sidebar .info p {
+  /* text-align: fle; */
+}
 .sidebar .links {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+.sidebar .info h2,
 .sidebar .links h2 {
   font-weight: 400;
   text-decoration: underline;
+  text-align: center;
 }
 .sidebar .links a {
   display: flex;
