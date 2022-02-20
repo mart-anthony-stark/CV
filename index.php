@@ -30,11 +30,12 @@
     $technical_skills = array(
         new TechSkill("HTML", 95),
         new TechSkill("CSS", 80),
-        new TechSkill("Javasript", 98),
+        new TechSkill("Javascript", 98),
         new TechSkill("React", 85),
         new TechSkill("Vue", 98),
-        new TechSkill("Svelte", 70),
+        new TechSkill("Svelte", 60),
         new TechSkill("Node.js", 90),
+        new TechSkill("Express.js", 83),
         new TechSkill("Java", 85)
     );
     $soft_skills = array(
