@@ -10,6 +10,13 @@
             $this->icon = $icon;
         }
     }
+    class TechSkill {
+        public $skill, $percent;
+        public function __construct(string $skill, string $percent) {
+            $this->skill = $skill;
+            $this->percent = $percent;
+        }
+    }
     $name = "Mart Anthony A. Salazar";
     $profession = "Web and Software Developer";
     $bio = "Innovative, task-driven BSIT student and a fullstack web developer specialized in frontend development.";
@@ -112,12 +119,14 @@
                     ?>
                 </ul>
             </section>
-            </div>
 
             <section class="technical-skills">
                 <h2 class="heading">Technical Skills</h2>
             </section>
+            </div>
+            
         </div>
     </main>
+
 </body>
 </html>
