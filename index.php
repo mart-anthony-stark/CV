@@ -12,7 +12,7 @@
     }
     $name = "Mart Anthony A. Salazar";
     $profession = "Web and Software Developer";
-    $links = array(
+    $social_links = array(
         new Link("https://www.facebook.com/", "martanthony.abanosalazar", "fa-linkedin"),
         new Link("https://github.com/mart-anthony-stark", "mart-anthony-stark", "fa-github"),
         new Link("https://www.facebook.com/", "martanthony.abanosalazar", "fa-facebook"),
@@ -36,7 +36,7 @@
             <div class="links">
                 <h2>CONTACTS</h2>
             <?php
-                foreach($links as $i => $i_value) {
+                foreach($social_links as $i => $i_value) {
                     echo "<a href=$i_value->address target=_'blank'>
                     <i class='fa $i_value->icon' aria-hidden='true'></i>
                         $i_value->linkname
@@ -52,6 +52,15 @@
                     <h4><?php echo $profession?></h4>
                 </div>
             </div>
+
+            <section class="objective">
+                <h2 class="heading">Career Objective</h2>
+                <p>"Enthusiastic and hard working web developer with two years of experience seeking a position with tech companies where I can offer my expertise in JavaScript to clients and customers."</p>
+            </section>
+
+            <section class="education">
+                <h2 class="heading">Education</h2>
+            </section>
         </div>
     </main>
 </body>
