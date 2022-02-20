@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+:root {
+  --c-pri: #223243;
+  --c-pri: rgb(34, 50, 67);
+}
 body {
   scroll-behavior: smooth;
 }
@@ -15,7 +19,7 @@ body {
 }
 .banner {
   height: 200px;
-  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(to right, rgb(34, 50, 67), rgba(34, 50, 67, 0.7)),
     url("../images/tech.jpeg") bottom;
   background-size: cover;
   color: #fff;
@@ -25,21 +29,25 @@ body {
 }
 main {
   display: grid;
-  grid-template-columns: 350px 1fr;
+  grid-template-columns: 300px 1fr;
 }
 .sidebar {
   min-height: calc(100vh);
-  background: #000;
+  background: var(--c-pri);
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 10px;
+  padding: 15px;
 }
 .sidebar .profile {
   border-radius: 100%;
   width: 200px;
   height: 200px;
-  background: url("../images/mart.png") center;
+  background: url("../images/mart-white-bg.png") center;
   background-size: cover;
   border: 1px solid white;
+}
+
+.info {
+  padding: 25px;
 }
