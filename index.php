@@ -21,7 +21,7 @@
     $profession = "Web and Software Developer";
     $bio = "Innovative, task-driven BSIT student and a fullstack web developer specialized in frontend development.";
     $social_links = array(
-        new Link("https://www.facebook.com/", "martanthony.abanosalazar", "fa-linkedin"),
+        new Link("https://www.linkedin.com/in/mart-anthony-salazar-420ba81b6/", "Mart Anthony Salazar", "fa-linkedin"),
         new Link("https://github.com/mart-anthony-stark", "mart-anthony-stark", "fa-github"),
         new Link("https://www.facebook.com/", "martanthony.abanosalazar", "fa-facebook"),
         new Link("https://twitter.com/anthony_stark21", "@anthony_stark21", "fa-twitter"),
