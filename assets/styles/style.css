@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  scroll-behavior: smooth;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner {
+  height: 200px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
+    url("../images/tech.jpeg") bottom;
+  background-size: cover;
+  color: #fff;
+}
+.banner h1 {
+  font-size: 50px;
+}
+main {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+}
+.sidebar {
+  min-height: calc(100vh);
+  background: #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.sidebar .profile {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  background: url("../images/mart.png") center;
+  background-size: cover;
+  border: 1px solid white;
+}
