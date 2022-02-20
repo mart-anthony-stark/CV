@@ -13,8 +13,10 @@
     $name = "Mart Anthony A. Salazar";
     $profession = "Web and Software Developer";
     $links = array(
-        new Link("https://www.facebook.com/", "fb", "fa-facebook"),
-        new Link("facebook.com", "fb", "fa-facebook")
+        new Link("https://www.facebook.com/", "martanthony.abanosalazar", "fa-linkedin"),
+        new Link("https://github.com/mart-anthony-stark", "mart-anthony-stark", "fa-github"),
+        new Link("https://www.facebook.com/", "martanthony.abanosalazar", "fa-facebook"),
+        new Link("https://twitter.com/anthony_stark21", "@anthony_stark21", "fa-twitter"),
     );
 ?>
 <!DOCTYPE html>
