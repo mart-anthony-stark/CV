@@ -12,7 +12,7 @@
     }
     class TechSkill {
         public $skill, $percent;
-        public function __construct(string $skill, string $percent) {
+        public function __construct(string $skill, int $percent) {
             $this->skill = $skill;
             $this->percent = $percent;
         }
@@ -28,10 +28,14 @@
     );
     $career_objective = "Enthusiastic and hard working web developer with two years of experience seeking a position with tech companies where I can offer my expertise in JavaScript to clients and customers.";
     $technical_skills = array(
-        "HTML, CSS, Javascript",
-        "Frontend Frameworks: React, Vue, Svelte",
-        "Backend Technologies: Node, Express, Fastify, REST",
-        "experienced in SCRUM and AGILE methodology"
+        new TechSkill("HTML", 95),
+        new TechSkill("CSS", 80),
+        new TechSkill("Javasript", 98),
+        new TechSkill("React", 85),
+        new TechSkill("Vue", 98),
+        new TechSkill("Svelte", 70),
+        new TechSkill("Node.js", 90),
+        new TechSkill("Java", 85)
     );
     $soft_skills = array(
         "Time Management",
@@ -122,6 +126,22 @@
 
             <section class="technical-skills">
                 <h2 class="heading">Technical Skills</h2>
+                <div class="skills-cont">
+                <?php 
+                    foreach($technical_skills as $skill_val){
+                    ?>
+                        <div class="card">
+                            <h4 class="skill"><?php echo "<span>$skill_val->skill</span> <span>$skill_val->percent%</span>" ?></h4>
+                            <div class="profficiency">
+                                <span class="percent" 
+                                style=<?php 
+                                    echo "width:$skill_val->percent%" 
+                                ?>
+                                ></span>
+                            </div>
+                        </div>
+                    <?php }?>
+                </div>
             </section>
             </div>
             
