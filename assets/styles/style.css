@@ -103,6 +103,9 @@ main {
   text-decoration: underline;
   margin-bottom: 20px;
 }
+.objective p {
+  max-width: 90%;
+}
 .info section {
   margin-top: 50px;
 }
