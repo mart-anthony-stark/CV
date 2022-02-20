@@ -49,6 +49,12 @@
     <main>
         <div class="sidebar">
             <div class="profile"></div>
+
+            <div class="info">
+                <h2>About me</h2>
+                <p>Innovative, task-driven IT student and a fullstack web developer specialized in frontend development.</p>
+            </div>
+
             <div class="links">
                 <h2>CONTACT</h2>
             <?php
