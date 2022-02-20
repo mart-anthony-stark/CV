@@ -12,6 +12,7 @@
     }
     $name = "Mart Anthony A. Salazar";
     $profession = "Web and Software Developer";
+    $bio = "Innovative, task-driven BSIT student and a fullstack web developer specialized in frontend development.";
     $social_links = array(
         new Link("https://www.facebook.com/", "martanthony.abanosalazar", "fa-linkedin"),
         new Link("https://github.com/mart-anthony-stark", "mart-anthony-stark", "fa-github"),
@@ -51,8 +52,8 @@
             <div class="profile"></div>
 
             <div class="info">
-                <h2>About me</h2>
-                <p>Innovative, task-driven IT student and a fullstack web developer specialized in frontend development.</p>
+                <h2>ABOUT ME</h2>
+                <p><?php echo $bio ?></p>
             </div>
 
             <div class="links">
