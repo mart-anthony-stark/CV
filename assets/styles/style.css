@@ -27,6 +27,7 @@ a {
     url("../images/tech.jpeg") bottom;
   background-size: cover;
   color: #fff;
+  padding: 10px;
 }
 .banner h1 {
   font-size: 50px;
@@ -34,6 +35,12 @@ a {
 main {
   display: grid;
   grid-template-columns: 300px 1fr;
+}
+.two-cols {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 50px;
+  flex-wrap: wrap;
 }
 .sidebar {
   min-height: calc(100vh);
@@ -87,4 +94,14 @@ main {
 }
 .info section {
   margin-top: 50px;
+}
+.education {
+  max-width: 500px;
+}
+.education .year {
+  font-weight: 900;
+  padding-right: 20px;
+}
+.education td {
+  padding: 5px;
 }
