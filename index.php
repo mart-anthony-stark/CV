@@ -9,7 +9,7 @@
         }
     }
     $name = "Mart Anthony A. Salazar";
-    $profession = "Web Developer";
+    $profession = "Web and Software Developer";
     $links = array(
         new Link("https://www.facebook.com/", "fb"),
         new Link("facebook.com", "fb")
@@ -25,22 +25,17 @@
     <title>Mart Anthony A. Salazar</title>
 </head>
 <body>
-    <div class="banner center">
-        <div class="name">
-            <h1><?php echo $name ?></h1>
-            <h4><?php echo $profession?></h4>
-        </div>
-    </div>
     <main>
         <div class="sidebar">
             <div class="profile"></div>
         </div>
         <div class="info">
-            <?php
-                foreach($links as $i => $i_value) {
-                    echo "<a href=$i_value->address target=_'blank'>$i_value->linkname</a>";
-                }
-            ?>
+            <div class="banner center">
+                <div class="name">
+                    <h1><?php echo $name ?></h1>
+                    <h4><?php echo $profession?></h4>
+                </div>
+            </div>
         </div>
     </main>
 </body>
