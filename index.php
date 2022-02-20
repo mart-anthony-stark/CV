@@ -19,6 +19,21 @@
         new Link("https://twitter.com/anthony_stark21", "@anthony_stark21", "fa-twitter"),
     );
     $career_objective = "Enthusiastic and hard working web developer with two years of experience seeking a position with tech companies where I can offer my expertise in JavaScript to clients and customers.";
+    $technical_skills = array(
+        "HTML, CSS, Javascript",
+        "Frontend Frameworks: React, Vue, Svelte",
+        "Backend Technologies: Node, Express, Fastify, REST",
+        "experienced in SCRUM and AGILE methodology"
+    );
+    $soft_skills = array(
+        "Time Management",
+        "Patience",
+        "Verbal and Written Communication",
+        "Teamwork",
+        "Flexibility",
+        "Adaptability",
+        "Analytical Skills",
+    );
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +50,7 @@
         <div class="sidebar">
             <div class="profile"></div>
             <div class="links">
-                <h2>CONTACTS</h2>
+                <h2>CONTACT</h2>
             <?php
                 foreach($social_links as $i => $i_value) {
                     echo "<a href=$i_value->address target=_'blank'>
@@ -58,9 +73,42 @@
                 <h2 class="heading">Career Objective</h2>
                 <p><?php echo $career_objective ?></p>
             </section>
-
+            
+            <div class="two-cols">
             <section class="education">
                 <h2 class="heading">Education</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="year">2020 - present</td>
+                            <td>BSIT - University of Camarines Norte(CNSC)</td>
+                        </tr>
+                        <tr>
+                            <td class="year">2018</td>
+                            <td>STEM strand - Camarines Norte Senior High School(CNSHS)</td>
+                        </tr>
+                        <tr>
+                            <td class="year">2013</td>
+                            <td>JHS - La Consolacion College of Daet(LCCD)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="soft-skills">
+                <h2 class="heading">Soft Skills</h2>
+                <ul>
+                    <?php
+                        foreach($soft_skills as $x){
+                            echo "<li>$x</li>";
+                        }
+                    ?>
+                </ul>
+            </section>
+            </div>
+
+            <section class="technical-skills">
+                <h2 class="heading">Technical Skills</h2>
             </section>
         </div>
     </main>
