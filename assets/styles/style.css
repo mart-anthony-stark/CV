@@ -116,3 +116,36 @@ main {
 .education td {
   padding: 5px;
 }
+.technical-skills {
+  width: 100%;
+}
+.technical-skills .skills-cont {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+.technical-skills .skills-cont .card {
+  box-shadow: 0 0 5px rgba(34, 50, 67, 0.4);
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 250px;
+  width: 100%;
+}
+.technical-skills .skills-cont .card .skill {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.technical-skills .skills-cont .card .profficiency {
+  position: relative;
+  background: rgb(255, 255, 255);
+  height: 5px;
+  width: 100%;
+}
+.technical-skills .skills-cont .card .profficiency .percent {
+  position: absolute;
+  background: var(--c-pri);
+  height: 100%;
+}
