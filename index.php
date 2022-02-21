@@ -17,9 +17,21 @@
             $this->percent = $percent;
         }
     }
+    class PersonalDetail {
+        public $detail, $value;
+        public function __construct(string $detail, string $value){
+            $this->detail = $detail;
+            $this->value = $value;
+        }
+    }
     $name = "Mart Anthony A. Salazar";
     $profession = "Web and Software Developer";
     $bio = "Innovative, task-driven BSIT student and a fullstack web developer specialized in frontend development.";
+    $details = array(
+        new PersonalDetail("Age", "20"),
+        new PersonalDetail("Address", "Daet, Camarines Norte, Bicol"),
+        new PersonalDetail("Email", "20")
+    );
     $social_links = array(
         new Link("https://www.linkedin.com/in/mart-anthony-salazar-420ba81b6/", "Mart Anthony Salazar", "fa-linkedin"),
         new Link("https://github.com/mart-anthony-stark", "mart-anthony-stark", "fa-github"),
@@ -35,6 +47,7 @@
         new TechSkill("Vue", 98),
         new TechSkill("Svelte", 60),
         new TechSkill("Node.js", 90),
+        new TechSkill("PHP", 50),
         new TechSkill("Express.js", 83),
         new TechSkill("Java", 85)
     );
@@ -66,6 +79,9 @@
             <div class="info">
                 <h2>ABOUT ME</h2>
                 <p><?php echo $bio ?></p>
+                <div class="details">
+
+                </div>
             </div>
 
             <div class="links">
