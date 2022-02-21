@@ -27,10 +27,10 @@
     $name = "Mart Anthony A. Salazar";
     $profession = "Web and Software Developer";
     $bio = "Innovative, task-driven BSIT student and a fullstack web developer specialized in frontend development.";
-    $details = array(
+    $personal_details = array(
         new PersonalDetail("Age", "20"),
         new PersonalDetail("Address", "Daet, Camarines Norte, Bicol"),
-        new PersonalDetail("Email", "20")
+        new PersonalDetail("Email", "martsalazar0@gmail.com")
     );
     $social_links = array(
         new Link("https://www.linkedin.com/in/mart-anthony-salazar-420ba81b6/", "Mart Anthony Salazar", "fa-linkedin"),
@@ -80,7 +80,11 @@
                 <h2>ABOUT ME</h2>
                 <p><?php echo $bio ?></p>
                 <div class="details">
-
+                    <?php foreach($personal_details as $d) {?>
+                        <div class="personal-detail">
+                            <h3><?php echo $d->detail ?><span>: <?php echo $d->value ?></span></h3>
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
 
