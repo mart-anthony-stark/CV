@@ -68,6 +68,12 @@ main {
 .sidebar .info p {
   text-align: center;
 }
+.sidebar .info .details .personal-detail {
+  margin: 10px 0;
+}
+.sidebar .info .details .personal-detail span {
+  font-weight: 400;
+}
 .sidebar .links {
   margin-top: 30px;
   display: flex;
